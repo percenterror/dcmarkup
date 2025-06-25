@@ -43,7 +43,9 @@ function updatePreview(){
     // Replaces any italics
     preview = preview.replaceAll("<br>* ", "<br>&escapedListItem;");
     preview = replaceUsingTags(preview, "*", "<i>");
+    preview = replaceUsingTags(preview, "__", "<u>");
     preview = replaceUsingTags(preview, "_", "<i>");
+    preview = replaceUsingTags(preview, "~~", "<s>");
     
     // Replaces any mini code elements
     preview = replaceUsingTags(preview, "`", "<code>");

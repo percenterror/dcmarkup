@@ -21,10 +21,11 @@ body{
     text-align: center;
     color: white;
     background-color: #002;
+    overflow-x: hidden;
 }
 p#preview{
     display: block;
-    background-color: #020;
+    background-color: #111;
     font-family: 'ggsans normal';
     line-height: 1.25rem;
     text-align: left;
@@ -65,9 +66,21 @@ textarea{
     width: 90%;
     height: 10rem;
     resize: vertical;
+    background-color: #020;
+    color: #FFF;
+    font-family: 'ggsans normal';
 }
 @media screen and (max-width: 600px){
     textarea{
         width: 99%;
     }
+}
+footer{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0px 0px 5px #000;
+    color: #fff;
 }
