@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'ggsans normal';
+    src: url(ggsans-Normal.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ggsans semibold';
+    src: url(ggsans-Semibold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ggsans bold';
+    src: url(ggsans-Bold.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    background-color: #002;
+}
+p#preview{
+    display: block;
+    background-color: #020;
+    font-family: 'ggsans normal';
+    line-height: 1.25rem;
+    text-align: left;
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 1rem;
+}
+p#preview h1, p#preview h2, p#preview h3, p#preview, p#preview b, p#preview small, p#preview i{
+    outline: 0;
+}
+p#preview b{
+    font-family: 'ggsans semibold';
+}
+p#preview h1, p#preview h2, p#preview h3{
+    font-family: 'ggsans semibold';
+    margin: 0;
+}
+p#preview h1{line-height: 2.5rem;}
+p#preview h2{line-height: 2.25rem;}
+p#preview h3{line-height: 1.75rem;}
+p#preview small{
+    display: block;
+    font-size: 0.75rem;
+    color: #94959c;
+    letter-spacing: 0.02em;
+}
+p#preview li{
+    margin-left: 1.1rem;
+}
+p#preview code{
+    font-family: monospace;
+    background-color: #111;
+    border-style: solid;
+    border-radius: 3px;
+    border-color: #222;
+}
+textarea{
+    width: 90%;
+    height: 10rem;
+    resize: vertical;
+}
+@media screen and (max-width: 600px){
+    textarea{
+        width: 99%;
+    }
+}
