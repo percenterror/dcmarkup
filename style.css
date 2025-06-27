@@ -42,7 +42,6 @@ p#preview b{
 p#preview h1, p#preview h2, p#preview h3{
     font-family: 'ggsans semibold';
     margin: 0;
-    margin-bottom: -0.75rem;
 }
 p#preview h1{line-height: 2.5rem;}
 p#preview h2{line-height: 2.25rem;}
@@ -62,6 +61,9 @@ p#preview li:has(> h2)::marker{font-size: 1.5rem;}
 p#preview li:has(> h2){margin-left: 1.4rem;}
 p#preview li:has(> h3)::marker{font-size: 1.25rem;}
 p#preview li:has(> h3){margin-left: 1.25rem;}
+p#preview li:has(> small)::marker{font-size: 0.75rem;
+                                  color: #94959c;}
+p#preview li:has(> small){margin-left: 1rem;}
 p#preview code{
     font-family: monospace;
     background-color: #111;
