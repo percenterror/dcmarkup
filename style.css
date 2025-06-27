@@ -42,6 +42,7 @@ p#preview b{
 p#preview h1, p#preview h2, p#preview h3{
     font-family: 'ggsans semibold';
     margin: 0;
+    margin-bottom: -0.75rem;
 }
 p#preview h1{line-height: 2.5rem;}
 p#preview h2{line-height: 2.25rem;}
@@ -55,6 +56,12 @@ p#preview small{
 p#preview li{
     margin-left: 1.1rem;
 }
+p#preview li:has(> h1)::marker{font-size: 1.75rem;}
+p#preview li:has(> h1){margin-left: 1.6rem;}
+p#preview li:has(> h2)::marker{font-size: 1.5rem;}
+p#preview li:has(> h2){margin-left: 1.4rem;}
+p#preview li:has(> h3)::marker{font-size: 1.25rem;}
+p#preview li:has(> h3){margin-left: 1.25rem;}
 p#preview code{
     font-family: monospace;
     background-color: #111;
@@ -77,10 +84,11 @@ textarea{
 }
 footer{
     display: block;
-    position: absolute;
+    position: sticky;
     bottom: 0;
     text-align: center;
     width: 100%;
-    text-shadow: 0px 0px 5px #000;
+    text-shadow: 1px 1px 25px #000;
+    background-color: #0004;
     color: #fff;
 }
