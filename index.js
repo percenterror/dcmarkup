@@ -162,7 +162,8 @@ if (document.referrer){
         src: url(${origin}ggsans/ggsans-Bold.ttf);
         font-weight: normal;
         font-style: normal;
-    }`
+    }`;
+    document.head.appendChild(ggsans);
 }
 
 document.addEventListener("keydown", updatePreview);
