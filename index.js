@@ -123,13 +123,10 @@ function updatePreview(){
             "isPartOfCodeBlock": false
         }
     }
-    console.log(preview);
     
     // Adds line properties
     preview = headerProperties(preview);
-    console.log(preview);
     preview = listItemProperties(preview);
-    console.log(preview);
 
     // Adds markdown
     preview = replaceMarkdown(preview, "`", "<code>");
