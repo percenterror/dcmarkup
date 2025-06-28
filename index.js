@@ -144,6 +144,10 @@ function updatePreview(){
     previewElement.innerHTML = preview;
 }
 
+if (document.referrer){
+    console.log(document.referrer);
+}
+
 document.addEventListener("keydown", updatePreview);
 document.addEventListener("keyup", updatePreview);
 updatePreview();
