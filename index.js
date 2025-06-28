@@ -145,7 +145,27 @@ function updatePreview(){
 }
 
 if (document.referrer){
-    console.log(document.referrer);
+    const origin = document.referrer;
+    console.log(origin);
+    const ggsans = document.createElement("style");
+    ggsans.innerHTML = `@font-face {
+        font-family: 'ggsans normal';
+        src: url(${origin}ggsans/ggsans-Normal.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'ggsans semibold';
+        src: url(${origin}ggsans/ggsans-Semibold.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'ggsans bold';
+        src: url(${origin}ggsans/ggsans-Bold.ttf);
+        font-weight: normal;
+        font-style: normal;
+    }`
 }
 
 document.addEventListener("keydown", updatePreview);

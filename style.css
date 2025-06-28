@@ -1,21 +1,3 @@
-@font-face {
-    font-family: 'ggsans normal';
-    src: url(ggsans/ggsans-Normal.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ggsans semibold';
-    src: url(ggsans/ggsans-Semibold.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'ggsans bold';
-    src: url(ggsans/ggsans-Bold.ttf);
-    font-weight: normal;
-    font-style: normal;
-}
 body{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
