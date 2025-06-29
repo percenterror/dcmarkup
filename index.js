@@ -147,19 +147,19 @@ if (document.referrer){
     const ggsans = document.createElement("style");
     ggsans.innerHTML = `@font-face {
         font-family: 'ggsans normal';
-        src: url(${origin}ggsans/ggsans-Normal.ttf);
+        src: url(file://${origin.split("://")[1]}ggsans/ggsans-Normal.ttf);
         font-weight: normal;
         font-style: normal;
     }
     @font-face {
         font-family: 'ggsans semibold';
-        src: url(${origin}ggsans/ggsans-Semibold.ttf);
+        src: url(file://${origin.split("://")[1]}ggsans/ggsans-Semibold.ttf);
         font-weight: normal;
         font-style: normal;
     }
     @font-face {
         font-family: 'ggsans bold';
-        src: url(${origin}ggsans/ggsans-Bold.ttf);
+        src: url(file://${origin.split("://")[1]}ggsans/ggsans-Bold.ttf);
         font-weight: normal;
         font-style: normal;
     }`;
